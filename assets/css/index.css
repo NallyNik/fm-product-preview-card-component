@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: hsl(212, 21%, 14%);
+}
+h1, h2 {
+    font-family: 'Fraunces', serif;
+    font-size: xx-large;
+}
+h2 {
+    color: hsl(158, 36%, 37%);
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+main {
+    width: 22rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+figure {
+    width: 22rem;
+    height: 15rem;
+    background-image: url('../images/image-product-mobile.jpg');
+    background-size: cover;
+}
+button {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 0.5rem;
+    color: hsl(0, 0%, 100%);
+}
+button:hover {
+    background-color: hsl(157, 39%, 17%);
+    scale: 1.1;
+    transition: background-color 1s, scale 1s;
+}
+.main__text {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.main__text p:first-child {
+    letter-spacing: 0.2rem;
+}
+.text__prices {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.text__prices p {
+    text-decoration: line-through;
+}
+
+/*footer*/
+.footer__attribution {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 0.1rem;
+}
+.footer__attribution p {
+    font-size: 0.7rem;
+}
+.footer__attribution a {
+    font-size: 0.7rem;
+    color: hsl(158, 36%, 37%);
+}
+.footer__attribution a:hover {
+    font-weight: bold;
+}
+
+@media (min-width: 800px) {
+    main {
+        width: 35rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    figure {
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/image-product-desktop.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+}
